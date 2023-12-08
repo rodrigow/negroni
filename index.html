@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negroni FC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            background-color: #555;
+            cursor: pointer;
+        }
+
+        section {
+            display: none;
+            text-align: center;
+            padding: 2em;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            width: 50%;
+            border-radius: 5px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Negroni 2023</h1>
+</header>
+
+<nav>
+    <a onclick="showTab('category1')">Taça Romildo Bolzan</a>
+    <a onclick="showTab('category2')">Taça Começou Bem Mas Desandou</a>
+    <a onclick="showTab('category3')">Taça Campeão Moral Só Que Não</a>
+    <a onclick="showTab('category4')">Taça Melhor Jogador Ex-Grêmio</a>
+    <a onclick="showTab('category5')">Taça Thiago Santos</a>
+    <a onclick="showTab('category6')">Taça Melhor Futebol Que Foi Lanterna</a>
+    <a onclick="showTab('category7')">Taça Parecia Que Dava Mas Caiu Mesmo Assim</a>
+    <a onclick="showTab('category8')">Taça Nadou Nadou Nadou E Morreu Na Praia</a>
+    <a onclick="showTab('category9')">Taça Craque do Cartola</a>
+    <a onclick="showTab('category10')">Taça Mario Mitada</a>
+    <a onclick="showTab('category11')">Taça Maior Mitada De Um TIme</a>
+    <a onclick="showTab('category12')">Taça Campeão Entre OS Prós</a>
+    <a onclick="showTab('category13')">Taça Da Zona Morta</a>
+    <a onclick="showTab('category14')">Taça NEGRONI 2023</a>
+</nav>
+
+<section id="category1" class="active">
+    <h2>Taça Romildo Bolzan</h2>
+    <img src="images/2023/taca-romildo-bolzan.jpeg" alt="Category 1 Image">
+</section>
+
+<section id="category2">
+    <h2>Taça Começou Bem Mas Desandou</h2>
+    <img src="images/2023/taca-comecou-bem.jpeg" alt="Category 2 Image">
+</section>
+
+<section id="category3">
+    <h2>Taça Campeão Moral Só Que Não</h2>
+    <img src="images/2023/taca-campeao-moral.jpeg" alt="Category 3 Image">
+</section>
+
+<section id="category4">
+    <h2>Taça Melhor Jogador Ex-Grêmio</h2>
+    <img src="images/2023/taca-melhor-jogador.jpeg" alt="Category 4 Image">
+</section>
+
+<section id="category5">
+    <h2>Taça Thiago Santos</h2>
+    <img src="images/2023/taca-thiago-santos.jpeg" alt="Category 5 Image">
+</section>
+
+<section id="category6">
+    <h2>Taça Melhor Futebol Que Foi Lanterna</h2>
+    <img src="images/2023/taca-lanterna.jpeg" alt="Category 6 Image">
+</section>
+
+<section id="category7">
+    <h2>Taça Parecia Que Dava Mas Caiu Mesmo Assim</h2>
+    <img src="images/2023/taca-parecia.jpeg" alt="Category 7 Image">
+</section>
+
+<section id="category8">
+    <h2>Taça Nadou Nadou Nadou E Morreu Na Praia</h2>
+    <img src="images/2023/taca-nadou.jpeg" alt="Category 8 Image">
+</section>
+
+<section id="category9">
+    <h2>Taça Craque do Cartola</h2>
+    <img src="images/2023/taca-craque.jpeg" alt="Category 9 Image">
+</section>
+
+<section id="category10">
+    <h2>Taça Maior Mitada</h2>
+    <img src="images/2023/taca-maior-mitada-time.jpeg" alt="Category 10 Image">
+</section>
+
+<section id="category11">
+    <h2>Taça Maior Mitada De Um TIme</h2>
+    <img src="images/2023/taca-maior-mitada-time.jpeg" alt="Category 11 Image">
+</section>
+
+<section id="category12">
+    <h2>Taça Campeão Entre OS Prós</h2>
+    <img src="images/2023/taca-pros.jpeg" alt="Category 12 Image">
+</section>
+
+<section id="category13">
+    <h2>Taça Da Zona Morta</h2>
+    <img src="images/2023/taca-zona-morta.jpeg" alt="Category 13 Image">
+</section>
+
+<section id="category14">
+    <h2>Taça NEGRONI 2023</h2>
+    <img src="images/2023/taca-negroni.jpeg" alt="Category 14 Image">
+</section>
+
+<script>
+  function showTab(tabId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+      section.classList.remove('active');
+    });
+
+    // Show the selected section
+    const selectedSection = document.getElementById(tabId);
+    selectedSection.classList.add('active');
+  }
+</script>
+</body>
+</html>
